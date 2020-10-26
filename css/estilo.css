@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:wght@700&family=Open+Sans&display=swap');
-* {
-    margin: 0%; 
-    padding:0%;
+*{
+    margin: 0; 
+    padding: 0; 
     box-sizing: border-box;
 }
-.topo {
-    background-color:#f9003d;
-    widows: 100%;
+.topo{
+    background-color:  #f9003d;
+    width: 100%;
     height: 60px;
 }
-.menu {
-    width: 95%;
+.btnMenu{
+    display: none;
+}
+.fixo {
+    position: fixed;
+}
+.menu{
+    width: 90%;
     max-width: 1200px;
-    height: 60px;
-    margin:auto;
+    height: 100%;
+    margin: auto;
     display: flex;
     justify-content: flex-end;
 }
@@ -21,71 +27,72 @@
     width: 600px;
     height: 60px;
     list-style-type: none; 
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .menu a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 19px;
-    padding: 18px 50px;
+    font-family: 'Bebas neue', 'Segoe UI';
+    font-size: 20px;
+    padding: 17px 40px;
 }
 .menu a:hover{
-    background-color: purple;
+    background-color: #080424;
+    color:white;
     text-decoration: underline;
 }
-.banner {
+.banner{
     width: 100%;
-    height: 740px;
-    background-image: url("../img/imagem-fundo-banner.jpg");
+    height: 540px;
+    background-image: url(../img/imagem-fundo-banner.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
-.content {
-    width: 95%;
-    max-width: 1200px;
+.content{
+    max-width: 95%;
+    width: 1200px;
     height: 100%;
     margin: auto;
 }
 .alinhando-abaixo{
-    display: flex;
+    display:flex;
     align-items: flex-end;
 }
-.banner-text {
-    width: 560px;
-    height: 550px;
+.banner-text{
+    width: 460px;
+    height: 450px;
 }
 .banner-text h1{
-    font-size: 96px;
+    font-size: 81.2px;
     font-family: 'Bebas Neue', cursive;
-    color: white;
-    border-bottom: solid 2px #FFAF00;
-    padding-bottom: 20px;
- }
-.banner-text p {
-     font-family: 'Courier Prime', monospace ;
-     font-size: 52px;
-     text-transform: uppercase;
-     color: #f9003d;
-     margin-top: 40px;
-     margin-bottom: 40px;
- }
+    color: #ffffff;
+    border-bottom: solid 2px orange;
+    padding-bottom: 10px;
+}
+.banner-text p{
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #f9003d;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 17px;
+}
 .banner-text span{
-     margin-left: 15px;
- }
-
-.sobre {
-     width: 100%;
-     height: auto;
-     background-color: #080324;
- }
+    margin-left: 25px;
+}
+.sobre{
+    width: 100%;
+    height: 800px;
+    background-color: #080424;
+}
 .sobre h2{
-    font-family: 'Bebas Neue', cursive;
-    color: #F9003D;
+    font-family: 'Bebas Neue', 'cursive';
+    color: #f9003d;
     font-size: 64px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -95,166 +102,295 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.artigo-sobre img {
-    width: 100%;
+.artigo-sobre img{
+    width: 95%;
     max-width: 500px;
+    flex-wrap: 450px;
 }
 .artigo-text-sobre{
     width: 600px;
     color: white;
 }
 .artigo-text-sobre h3:nth-child(1){
-    font-family: 'Courier Prime', monospace ;
-    font-size: 24px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
     text-transform: uppercase;
 }
 .artigo-text-sobre h3:nth-child(2){
-    color: #FFAF00;
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
+    color:#ffaf00;
+    font-family: 'Bebas Neue', 'cursive';
     font-size: 64px;
 }
 .artigo-text-sobre p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
+    text-align: justify;
 }
 .info{
     width: 100%;
     height: 200px;
     background-image: url(../img/imagem-fundo-info.jpg);
     background-size: cover;
-    font-family: 'Courier Prime', monospace;
-    text-transform: uppercase;
 }
 .info h4{
-    color:white;
+    color: white;
     font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .info p{
     width: 250px;
-    color: #A259F7;
+    color: #a259f7;
     font-size: 28px;
-    border:solid 1px #A259F7;
+    border: solid 1px #a259f7;
+    text-transform: uppercase;
     text-align: center;
     padding: 1em 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
-
 .info-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.info-card p:hover{
-    background-color:#FFAF00;
-    text-decoration: underline;
+.info-card p:hover {
+    background-color: #ffaf00;
 }
-.endereco {
+
+.endereço{
     width: 100%;
     height: 500px;
     background-image: url(../img/imagem-fundo-ranking.jpg);
-    background-size: contain;
-    background-position:center;
-
+    background-size: cover;
+    background-position: center;
 }
-
-.endereco h2 {
+.endereço h2{
     font-size: 64px;
-    font-family: 'Bebas Neue', cursive;
-    color: #FFAF00;
+    font-family: 'Bebas Neue', 'cursive';
+    color: #ffaf00;
 }
-
-.end-text {
-    width: 850px;
+.end-text{
+    width: 800px;
     height: 210px;
-    background-color: #080324;
-    border : solid 2px #340B65;
+    background-color: #010010;
+    border: solid 2px #340b65;
     position: relative;
     display: flex;
     align-items: center;
 }
-
-.end-text p {
-    font-family: 'Courier Prime', monospace;
+.end-text p{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
-    color: #A259F7;
+    color: #a259f7;
+    font-weight: bold;
     margin-left: 20px;
 }
-
-.alinhamento-centro {
+.alinhamento-centro{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.end-text img {
+.end-text img{
     position: absolute;
     right: 20px;
     top: -80px;
 }
-
-.rodape  {
+.rodape{
     width: 100%;
-    height: 70px;
-    background-color: #F9003D;
-    color: white;
+    height: 80px;
+    background-color: #f9003d;
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
-
+.rodape-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 1199px){
     .sobre{
         height: auto;
         padding-bottom: 4em;
     }
-    .sobre .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .sobre .content{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
     }
-    .artigo-sobre {
+    .artigo-sobre{
         justify-content: center;
+ 
     }
-    .artigo-sobre img {
-        width: 90%;
-        max-width: 900px;
-        margin-bottom: 2em;
+    .artigo-sobre img{
+        width: 100%;
+        max-width: 850px;
+        margin-bottom: 2em;     
     }
-
-    .artigo-text-sobre {
+    .artigo-text-sobre{
         width: 800px;
     }
-}
-
+ }
 @media screen and (max-width: 991px){
-    .artigo-sobre img {
-        max-width:90%;
+    .artigo-sobre img{
+        max-width: 700px;
+    
     }
-
-    .artigo-text-sobre {
-        width: 700px;
+    .artigo-text-sobre{
+        width: 90%;
     }
-    .info-card {
+    .info-card{
         text-align: center;
     }
-    .info p {
-        width:220px;
+    .info p{
+        width: 220px;
     }
-
-    .end-text {
+    .end-text{  
+        width: 700px;
         flex-direction: column;
         height: auto;
         padding: 2em 0;
-        margin-top: 2em;
-
     }
-    .end-text img {
-        position: unset;
-        
-    }
-
-    .endereco {
+    .endereço{
         height: auto;
         padding-bottom: 2em;
+    }
+    .end-text img{
+        position: unset;
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 767px){
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        width: 100%;
+        height: 350px;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menu ul a:hover {
+        background-color: unset;
+    }
+    .btnMenu{
+        display: block;
+    }
+    .banner{
+        padding-top: 150px;
+        height: auto;
+    }
+    .banner-text h1{
+        font-size: 70px;
+    }
+    .banner-text p{
+        font-size: 40px;
+    }
+    .sobre h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .artigo-sobre h3{
+        font-size: 60px;
+        text-align: center;
+    }
+    .artigo-text-sobre p{
+        font-size:22px;
+    }
+    .info{
+        width: 100%;
+        height: 600px;
+        background-image: url(../assets/img/imagem-fundo-info.jpg);
+        background-size: cover;
+        padding: 3em;
+    }
+    .info-card{
+        text-align: center;
+    }
+    .info p{
+        width: 220px;
+    }
+    .info-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .endereço h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .end-text p{
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .end-text img{
+        margin-top: 2em;
+    }
+    .rodape-flex p{
+        padding-top: 5px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 575px){
+    .banner{
+        padding-top: 150px;
+        height: auto;
+    }
+    .banner-text h1{
+        font-size: 60px;
+    }
+    .banner-text p{
+        font-size: 35px;
+    }
+    .sobre h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .artigo-sobre h3{
+        font-size: 60px;
+        text-align: center;
+    }
+    .info{
+        width: 100%;
+        height: 700px;
+        background-image: url(../assets/img/imagem-fundo-info.jpg);
+        background-size: cover;
+    }
+    .info-card{
+        text-align: center;
+        padding: 3em;
+    }
+    .info p{
+        width: 220px;
+    }
+    .info-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .endereço h2{
+        font-size: 60px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .end-text p{
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .end-text img{
+        margin-top: 2em;
+    }
+    .rodape{
+        margin-top: 15px;
+    }
+    .rodape-flex p{
+        padding-top: 5px;
+        font-size: 15px;
     }
 }
